@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sachi\\Desktop\\Vendor\\Vendor-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82678787-7BBD-43E4-ACA6-08331799396B}|VendorApp\\VendorApp.csproj|c:\\users\\sachi\\desktop\\vendor\\vendor-project\\vendorapp\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82678787-7BBD-43E4-ACA6-08331799396B}|VendorApp\\VendorApp.csproj|solutionrelative:vendorapp\\views\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Sachi\\Desktop\\Vendor\\Vendor-Project\\VendorApp\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "VendorApp\\Views\\Admin\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\Sachi\\Desktop\\Vendor\\Vendor-Project\\VendorApp\\Views\\Admin\\AdminDashboard.cshtml",
+              "RelativeToolTip": "VendorApp\\Views\\Admin\\AdminDashboard.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-16T14:59:13.074Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
