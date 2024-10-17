@@ -1,0 +1,97 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Assets</title>
+    <link href="~/Image/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js" integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="~/Angular/Module.js"></script>
+    <script src="~/Angular/Service.js"></script>
+    <script src="~/Angular/AssetsController.js"></script>
+</head>
+<body ng-app="Myapp" ng-controller="asset">
+   <div class="containe">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="card card-body" style="background-color:navy; color:white">
+                   <h3 style="text-align:center">Welcome, Sachin!</h3>{{test}}
+                   <h5 style="text-align:right;">Dashboard / Assets</h5>
+
+               </div>
+
+           </div>
+
+       </div>
+
+   </div>
+
+    <div class="containe">
+        <div class="row">
+            <div class="col-md-12 mt-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <h3 class="text-center">Asssets Form </h3>
+                           
+                            <h6 class="mt-2">Name</h6>
+                            <input type="text" class="form-control" placeholder="Enter Your Name"  ng-model="name"/>
+                            {{name}}
+                            <h6 class="mt-2">Change Per Day</h6>
+                            <input type="text" class="form-control" placeholder="Enter Change Details" ng-model="changeperday" />
+                            <h6 class="mt-2">Description</h6>
+                            <input type="text" class="form-control" placeholder="Enter Your Description" ng-model="description"/>
+                            <h6 class="mt-2">Date</h6>
+                            <input type="date" class="form-control" placeholder="Enter Your Date" ng-model="date"/>
+
+                            <button type="button" class="btn btn-sm btn btn-success mt-2" ng-click="saveAssets()">{{mybtn}}</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-body">
+                            <h3 class="text-center">Asssets List </h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Sl No.</th>
+                                        <th>Name</th>
+                                        <th>Change By Date</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="m in asetList">
+                                        <td>{{$index+1}}</td>
+                                        <td>{{m.Name}}</td>
+                                        <td>{{m.ChangePerDay}}</td>
+                                        <td>{{m.Description}}</td>
+                                        <td>{{m.Date}}</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-danger" ng-click="deleteData(m.AssetsId)">Delete</button>
+                                            <button class="btn btn-sm btn-success" ng-click="EditData(m)">Edit</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
